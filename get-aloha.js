@@ -1,20 +1,6 @@
 // Your code here.
 const languages = require('./db.js')
 
-// const dataBase = languages.lang
-// const getAloha = Object.filter = function(dataBase, lang){
-//     let result = {}, key;
-//     for(key in dataBase){
-//         if(dataBase.hasOwnProperty(key) && languages[lang] === lang){
-//             result[key] = dataBase[key];
-//         }
-//     }
-//     return result;
-// }
-// const filtered = sample(languages[lang], lang)
-// console.log(filtered);
-
-
 const getAloha = function(languageName){
     return languages[languageName.toLowerCase()];
 }

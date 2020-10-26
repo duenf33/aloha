@@ -1,46 +1,29 @@
 const languages = require('./get-aloha.js')
-// const languages = require('./db.js');
 
-// const lang = process.argv[2];
-const userLanguage = process.argv[2].toLowerCase();
+const userLanguage = process.argv[2];
 const lang = userLanguage;
 const result = languages(lang)
 console.log(result.greeting);
 console.log(result.farewell);
 
-// if(process.argv[2] === undefined){
-//     return lang = languages['english'];
-// } else {
-//     return lang = process.argv[2]
-// }
-
-// const result = languages(lang);
-
-// console.log(lang);
-// console.log(languages[lang]['greeting']);
-
-// const lang = 'french';
-
-
 const sample = Object.filter = function(dataBase){
     for(const key in dataBase){
         if(dataBase.hasOwnProperty(key)){
-            result = dataBase[key];
+            return result = dataBase[key];
+        } else if(dataBase[key] === undefined){
+            return null;
         }
     }
-    return result;
+    return ;
 }
 const filtered = sample(languages[lang])
 
-
-// const sample = Object.filter = function(dataBase, idiom){
-//     let result = {}, key;
-//     for(key in dataBase){
-//         if(dataBase.hasOwnProperty(key) && idiom === lang){
-//             result[key] = dataBase[key];
-//         }
-//     }
-//     return result;
+// if(process.argv[2].length <= 0){
+    // console.log('undefined')
+    // return null;
+// } else {
+    // console.log('not undefined')
+    // return lang = process.argv[2]
 // }
-// const filtered = sample(languages[lang], lang)
-// console.log(languages[lang]);
+// process.argv[2].length <
+// console.log(process.argv[2].length)
