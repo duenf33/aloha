@@ -20,14 +20,27 @@ console.log(result.farewell);
 // console.log(languages[lang]['greeting']);
 
 // const lang = 'french';
-const sample = Object.filter = function(dataBase, idiom){
-    let result = {}, key;
-    for(key in dataBase){
-        if(dataBase.hasOwnProperty(key) && idiom === lang){
-            result[key] = dataBase[key];
+
+
+const sample = Object.filter = function(dataBase){
+    for(const key in dataBase){
+        if(dataBase.hasOwnProperty(key)){
+            result = dataBase[key];
         }
     }
     return result;
 }
-const filtered = sample(languages[lang], lang)
+const filtered = sample(languages[lang])
+
+
+// const sample = Object.filter = function(dataBase, idiom){
+//     let result = {}, key;
+//     for(key in dataBase){
+//         if(dataBase.hasOwnProperty(key) && idiom === lang){
+//             result[key] = dataBase[key];
+//         }
+//     }
+//     return result;
+// }
+// const filtered = sample(languages[lang], lang)
 // console.log(languages[lang]);
