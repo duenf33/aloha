@@ -1,27 +1,45 @@
 // Your code here.
 const languages = require('./db.js')
 
+// const dataBase = languages.lang
+// const getAloha = Object.filter = function(dataBase, lang){
+//     let result = {}, key;
+//     for(key in dataBase){
+//         if(dataBase.hasOwnProperty(key) && languages[lang] === lang){
+//             result[key] = dataBase[key];
+//         }
+//     }
+//     return result;
+// }
+// const filtered = sample(languages[lang], lang)
+// console.log(filtered);
+
+
 const getAloha = function(languageName){
-    switch(languageName){
-        case 'english':
-            return languages.english;
-
-        case 'spanish':
-            return languages.spanish;
-
-        case 'japanese':
-            return languages.japanese;
-
-        case 'russian':
-            return languages.russian;
-
-            case 'zulu':
-            return languages.zulu;
-
-        default:
-            return "Sorry, that language is not in our database yet.";
-    }
+    return languages[languageName.toLowerCase()];
 }
+//     switch(languageName){
+//         case 'english':
+//             return languages.english;
+
+//         case 'spanish':
+//             return languages.spanish;
+
+//         case 'japanese':
+//             return languages.japanese;
+
+//         case 'russian':
+//             return languages.russian;
+
+//             case 'zulu':
+//             return languages.zulu;
+
+//         default:
+//             return "Sorry, that language is not in our database yet.";
+//     }
+// }
+
+
 // const getAloha = function(languageName){
 //     switch(languageName){
 //         case 'english':
